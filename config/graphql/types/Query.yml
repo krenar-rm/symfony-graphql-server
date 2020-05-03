@@ -1,0 +1,12 @@
+Query:
+  type: object
+  config:
+    description: "Main query"
+    fields:
+      user:
+        type: "User"
+        args:
+          id:
+            type: "Int!"
+            description: "Идентификатор пользователя"
+        resolve: '@=resolver("App\\GraphQL\\Resolver\\UserResolver::resolve", [args["id"]])'
