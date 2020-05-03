@@ -1,0 +1,17 @@
+User:
+  type: object
+  config:
+    description: "Профиль пользователя"
+    fields:
+      id:
+        type: "Int!"
+        description: "Идентификатор пользователя"
+      username:
+        type: "String!"
+        description: "Логин пользователя"
+      email:
+        type: "String!"
+        description: "Электронная почта"
+      phone:
+        type: "String"
+        description: "Номер телефона"
