@@ -10,3 +10,6 @@ Query:
             type: "Int!"
             description: "Идентификатор пользователя"
         resolve: '@=resolver("App\\GraphQL\\Resolver\\UserResolver::resolve", [args["id"]])'
+      users:
+        type: "[User]"
+        resolve: '@=resolver("App\\GraphQL\\Resolver\\UserResolver::resolveCollection")'
